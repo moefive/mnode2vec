@@ -1,6 +1,6 @@
 # mnode2vec
 
-This repository references [node2vec](https://snap.stanford.edu/node2vec/) to implement multi-network walk to obtain feature vectors for multiple networks
+This repository references [node2vec](https://snap.stanford.edu/node2vec/) to implement multi-network walk to obtain feature vectors for multiple networks.
 
 ### Example
 
@@ -9,6 +9,8 @@ Run the following command in the project home directory to run mnode2vec on the 
 ```python
 python src/main.py --input graph --output emb/result.emb
 ```
+
+Make sure there are only graph files in the input directory.
 
 ### Input
 
