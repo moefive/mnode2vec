@@ -1,13 +1,4 @@
-'''
-Reference implementation of node2vec. 
 
-Author: Aditya Grover
-
-For more details, refer to the paper:
-node2vec: Scalable Feature Learning for Networks
-Aditya Grover and Jure Leskovec 
-Knowledge Discovery and Data Mining (KDD), 2016
-'''
 
 import argparse
 import numpy as np
@@ -23,7 +14,7 @@ def parse_args():
 	parser = argparse.ArgumentParser(description="Run node2vec.")
 
 	parser.add_argument('--input', nargs='?', default='graph',
-						help='Input graph path')
+						help='Input graph directory')
 
 	parser.add_argument('--output', nargs='?', default='emb/result.emb',
 						help='Embeddings path')
