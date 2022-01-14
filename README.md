@@ -1,6 +1,6 @@
 # mnode2vec
 
-This repository references [node2vec](https://snap.stanford.edu/node2vec/) to implement multi-network wandering to obtain feature vectors for multiple networks
+This repository references [node2vec](https://snap.stanford.edu/node2vec/) to implement multi-network walk to obtain feature vectors for multiple networks
 
 ###Example
 
