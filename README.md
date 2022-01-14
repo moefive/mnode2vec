@@ -2,7 +2,7 @@
 
 This repository references [node2vec](https://snap.stanford.edu/node2vec/) to implement multi-network walk to obtain feature vectors for multiple networks
 
-###Example
+### Example
 
 Run the following command in the project home directory to run mnode2vec on the three example networks:
 
