@@ -16,7 +16,7 @@ def parse_args():
 	parser.add_argument('--input', nargs='?', default='network',
 						help='Input network directory')
 
-	parser.add_argument('--output', nargs='?', default='emb/result.emb',
+	parser.add_argument('--output', nargs='?', default='output/result.output',
 						help='Embeddings path')
 
 	parser.add_argument('--dimensions', type=int, default=128,
