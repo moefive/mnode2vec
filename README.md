@@ -25,6 +25,9 @@ The first line has the following format:
 	num_of_nodes dim_of_representation
 
 The next n lines have the same format, defined by
-	node_id dim1 dim2 ... dimd
+
+```
+node_id dim1 dim2 ... dimd
+```
 
 where dim1, ... , dimd are features.
