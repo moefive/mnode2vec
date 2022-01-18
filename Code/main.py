@@ -13,8 +13,8 @@ def parse_args():
 	'''
 	parser = argparse.ArgumentParser(description="Run node2vec.")
 
-	parser.add_argument('--input', nargs='?', default='graph',
-						help='Input graph directory')
+	parser.add_argument('--input', nargs='?', default='network',
+						help='Input network directory')
 
 	parser.add_argument('--output', nargs='?', default='emb/result.emb',
 						help='Embeddings path')
@@ -127,7 +127,6 @@ def combine_walk(walk_path):
 
 def main(args):
 	'''
-	Pipeline for representational learning for all nodes in a graph.
 	'''
 	graph_path=find_graph(args.input)
 	graph_title=get_name(args.input)

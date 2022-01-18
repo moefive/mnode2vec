@@ -1,33 +1,30 @@
-# mnode2vec
+# node2vec
 
-This repository references [node2vec](https://snap.stanford.edu/node2vec/) to implement multi-network walk to obtain feature vectors for multiple networks.
+This is a new network embedding algorithm, which generalized the classic [node2vec](https://snap.stanford.edu/node2vec/) algorithm. It can process multiple networks and assign a feature vector to each node in networks.
 
-### Example
+The codes of Mnode2vec are provided in the folder code. The file main.py contains the main function of Mnode2vec and the file node2vec.py is the program of node2vec, which is called in main.py.
 
-Run the following command in the project home directory to run mnode2vec on the three example networks:
+A small example is provided in the folder network. It contains three files, corresponding to three networks. The network is unweighted and undirected as default. However, this can be changed by setting proper options. The format of network file is as follows:
 
-```python
-python src/main.py --input graph --output emb/result.emb
+```
+node1_id_int node2_id_int <weight_float, optional>
 ```
 
-Make sure there are only graph files in the input directory.
+To run Mnode2vec, please use the following command: 
 
-### Input
+```python
+python src/main.py --input graph --output output/result.emb
+```
 
-The files in the input path support edgelist files or txt files in the following formats,The graph defaults to a weighted undirected graph, and these options can be changed.
+Please note that there are only network files in the input directory.
 
-​	node1_id_int node2_id_int <weight_float, optional>
-
-### Output
-
-The output file is the same as node2vec, which has *n+1* lines for a graph with *n* vertices.
+The output file of the example is provided in folder output. If the input networks contain n vertices, the output file will include n+1 lines.
 
 The first line has the following format:
 
 	num_of_nodes dim_of_representation
 
-The next *n* lines are as follows:
-	
+The next n lines have the same format, defined by
 	node_id dim1 dim2 ... dimd
 
-where dim1, ... , dimd is the *d*-dimensional representation .
+where dim1, ... , dimd are features.
