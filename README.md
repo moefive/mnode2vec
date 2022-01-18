@@ -13,7 +13,7 @@ node1_id_int node2_id_int <weight_float, optional>
 To run Mnode2vec, please use the following command: 
 
 ```python
-python src/main.py --input graph --output output/result.emb
+python Code/main.py --input graph --output output/result.emb
 ```
 
 Please note that there are only network files in the input directory.
