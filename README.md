@@ -1,4 +1,4 @@
-# node2vec
+# Mnode2vec
 
 This is a new network embedding algorithm, which generalized the classic [node2vec](https://snap.stanford.edu/node2vec/) algorithm. It can process multiple networks and assign a feature vector to each node in networks.
 
